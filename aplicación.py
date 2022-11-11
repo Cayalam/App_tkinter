@@ -84,22 +84,24 @@ frame_operaciones.place(x = 10, y = 260)
 
 
 # Boton para Invertir Numero
-
-bt_invertir = Button(frame_operaciones, text="Invertir",command=invertir)
+fotoin=PhotoImage(file="img/images.png")
+bt_invertir = Button(frame_operaciones, text="Invertir",image=fotoin,command=invertir)
 bt_invertir.place(x=45, y=45, width=100, height=30)
 
 #Boton borrar
+fotoen=PhotoImage(file="img/borrar.png")
 bt_borrar = Button(frame_operaciones, text="Borrar")
 bt_borrar.place(x=190, y=45, width=100, height=30)
 
 
 
 #Boton borrar
-bt_borrar = Button(frame_operaciones, text="Borrar",command=borrar)
+bt_borrar = Button(frame_operaciones, text="Borrar",image=fotoen,command=borrar)
 bt_borrar.place(x=190, y=45, width=100, height=30)
 
 # Boton salir
-bt_salir = Button(frame_operaciones, text="Salir",command=salir)
+fotoon= PhotoImage(file="img/descarga.png")
+bt_salir = Button(frame_operaciones, text="Salir",image=fotoon,command=salir)
 bt_salir.place(x=335, y=45, width=100, height=30)
 
 # fram resultados
