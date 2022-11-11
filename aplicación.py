@@ -2,7 +2,7 @@
 
 from tkinter import *
 from tkinter import messagebox
-from tkinter import PhotoImage
+
 # funciones de la app
 
 def invertir():
@@ -32,7 +32,7 @@ def salir():
 ventana_principal = Tk()
 
 #titulo de la ventana
-ventana_principal.title("Invertidor de numeros")
+ventana_principal.title("Invertir Numeros")
 
 #Tamaño de la ventana, ancho y alto
 ventana_principal.geometry("500x500")
@@ -59,8 +59,8 @@ frame_entrada.place(x = 10, y = 10)
 
 # Etiquetas par el titulo de app
 titulo = Label(frame_entrada, text = "Inertir numero de 4 digitos al revés")
-titulo.config(bg = "sky blue", fg = "slate gray", font = ("ALGERIAN",16))
-titulo.place(x = 32, y = 20)
+titulo.config(bg = "sky blue", fg = "black", font = ("ALGERIAN",18))
+titulo.place(x = 18, y = 20)
 
 # Etiqueta para x
 lb_x = Label(frame_entrada, text = "X = ")
@@ -84,8 +84,8 @@ frame_operaciones.place(x = 10, y = 260)
 
 
 # Boton para Invertir Numero
-fotoinvertir = PhotoImage(file="descarga.png")
-bt_invertir = Button(frame_operaciones, text="Invertir", image=fotoinvertir,command=invertir)
+
+bt_invertir = Button(frame_operaciones, text="Invertir",command=invertir)
 bt_invertir.place(x=45, y=45, width=100, height=30)
 
 #Boton borrar
@@ -110,7 +110,7 @@ frame_resultados.place(x=10, y = 390)
 
 #area de texto para resultados
 t_resultados = Text(frame_resultados)
-t_resultados.config(bg="Khaki4", fg="black", font=("Arial Black",18))
+t_resultados.config(bg="Khaki4", fg="black", font=("Arial Black",16))
 t_resultados.place(x=10,y=10, width=460, height= 80)
 
 ventana_principal.mainloop()
